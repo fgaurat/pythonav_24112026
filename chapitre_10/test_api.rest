@@ -1,0 +1,18 @@
+GET http://localhost:8000
+
+###
+
+GET http://localhost:8000/items/2
+
+###
+GET http://localhost:8000/items/2?q=leparam
+
+###
+POST http://localhost:8000/items
+content-type: application/json
+
+{
+    "name":"Le truc",
+    "price":12.2,
+    "is_offer":true
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MKn5NWVBEuQXJE7TSKSgPUmMiSCmVTfCsR+VSSeQpHnoyJQZZFn/kBn+Ht5jZDPQ" crossorigin="anonymous">
+</head>
+<body>
+    <table class="table">
+        <tbody>
+    {% for customer in customers %}
+            <tr>
+                <td>{{customer.id}}</td>
+                <td>{{customer.name}}</td>
+                <td>{{customer.first_name}}</td>
+                <td>{{customer.gender}}</td>
+                <td>{{customer.ip_address}}</td>
+            </tr>
+    
+    {% endfor %}
+        </tbody>
+    </table>
+
+
+</body>
+</html>
